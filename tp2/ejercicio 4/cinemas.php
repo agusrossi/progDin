@@ -163,13 +163,13 @@
                             <div class="col-md-6">
                                 <label for="edad">Restricciones de edad</label><br>
 
-                                <input required type="radio" name="edad" id="radiobtn" value="Todo Publico" class="inputs">
+                                <input required type="radio" name="edad" id="radiobtn" value="Todo Publico" class="inputs radiobtn">
                                 <label style="font-weight:400;" for="todoPublico">Todo Publico</label>
 
-                                <input required type="radio" name="edad" id="radiobtn" value="Mayores a 7 años" class="inputs">
+                                <input required type="radio" name="edad" id="radiobtn" value="Mayores a 7 años" class="inputs radiobtn">
                                 <label style="font-weight:400;" for="mayor7">Mayores a 7 años</label>
 
-                                <input required type="radio" name="edad" id="radiobtn" value="Mayores de 18 años" class="inputs">
+                                <input required type="radio" name="edad" id="radiobtn" value="Mayores de 18 años" class="inputs radiobtn">
                                 <label style="font-weight:400;" for="mayor18">Mayores de 18 años</label>
                             </div>
                         </div>
@@ -217,8 +217,8 @@
 
         const borrar = document.getElementById('borrar');
         const inputs = document.querySelectorAll('.inputs');
-        const selector = document.querySelector('SELECT');
-        const labels = document.getElementById('radiobtn');
+        const selector = document.querySelector('select');
+        const labels = document.getElementsByClassName('radiobtn');
 
         borrar.addEventListener('click', function() {
             for (let i = 0; i < inputs.length; i++) {
